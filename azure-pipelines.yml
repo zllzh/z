@@ -15,7 +15,7 @@ steps:
    cd sync
    git clone https://github.com/zllzh/zllzh-CI.git
    cd zllzh-CI
-   git remote add azure http://zhangli:4sv37so3yc7eoa7jxrj34p7nslocffenvvk2m5eclp33difkt3ia@tsdevops.telsafe.com.cn:8080/tfs/ProductCollection/ScrumTemplate/_git/z
+   git remote add azure ssh://tsdevops.telsafe.com.cn:22/tfs/ProductCollection/ScrumTemplate/_git/z
    git push azure master
   displayName: 'Run a multi-line script'
 
