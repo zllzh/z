@@ -7,7 +7,7 @@ pool:
   vmImage: 'zllzh'
 
 steps：
-  script:
+  script
    mkdir sync
    cd sync
    git clone  https://github.com/zllzh/zllzh-CI.git
