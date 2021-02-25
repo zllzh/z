@@ -7,13 +7,17 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'zllzh'
 
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+    mkdir sync
+    cd sync
+    git clone  https://github.com/zllzh/zllzh-CI.git
+    cd <github project>
+    git remote add azure https://<Azure DevOps Organization>:<token>@dev.azure.com/<Azure DevOps Organization>/<project>/_git/<repo.git> 8    
+    git push -u azure $(branch) --force
   displayName: 'Run a multi-line script'
