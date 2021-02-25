@@ -23,7 +23,7 @@ steps:
 - script: |
    mkdir sync
    cd sync
-   git clone git@github.com:zllzh/z.git
+   git clone https://github.com/zllzh/z.git
 
    git remote add azure ssh://tsdevops.telsafe.com.cn:22/tfs/ProductCollection/ScrumTemplate/_git/z
    git push azure master --force
