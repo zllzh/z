@@ -1,7 +1,4 @@
 # Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
 
 trigger:
 - master
@@ -10,14 +7,14 @@ pool:
   vmImage: 'zllzh'
 
 steps:
-- script: echo Hello, world!
+script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: |
-    mkdir sync
-    cd sync
-    git clone  https://github.com/zllzh/zllzh-CI.git
-    cd zllzh-CI
-    git remote add azure  http://tsdevops.telsafe.com.cn:8080/tfs/ProductCollection/ScrumTemplate/_git/z
-    git push azure master
-  displayName: 'Run a multi-line script'
+script: |
+  mkdir sync
+  cd sync
+  git clone  https://github.com/zllzh/zllzh-CI.git
+  cd zllzh-CI
+  git remote add azure  http://tsdevops.telsafe.com.cn:8080/tfs/ProductCollection/ScrumTemplate/_git/z
+  git push azure master
+displayName: 'Run a multi-line script'
