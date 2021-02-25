@@ -6,8 +6,6 @@ trigger:
 pool:
   vmImage: 'zllzh'
 
-steps:
-script: echo Hello, world!
 
 script: |
   mkdir sync
