@@ -3,8 +3,8 @@
 #trigger:
 #- master
 
-#pool:
-#  vmImage: 'zllzh'
+pool:
+  vmImage: 'zllzh'
 
 steps:
 - script: echo Hello, world!
