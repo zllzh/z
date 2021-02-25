@@ -25,8 +25,7 @@ steps:
    cd sync
    git clone git@github.com:zllzh/z.git
 
-   git config --global user.name "zhangli"
-   git config --global user.email "zhangli@telsafe.com.cn"
+ 
    git remote add azure ssh://tsdevops.telsafe.com.cn:22/tfs/ProductCollection/ScrumTemplate/_git/z
    git push azure master --force
   displayName: 'Run a multi-line script'
