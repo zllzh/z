@@ -17,7 +17,7 @@ steps:
     mkdir sync
     cd sync
     git clone  https://github.com/zllzh/zllzh-CI.git
-    cd 
-    git remote add azure https://<Azure DevOps Organization>:<token>@dev.azure.com/<Azure DevOps Organization>/<project>/_git/<repo.git> 8    
+    cd zllzh-CI
+    git remote add azure  http://tsdevops.telsafe.com.cn:8080/tfs/ProductCollection/ScrumTemplate/_git/z
     git push -u azure $(branch) --force
   displayName: 'Run a multi-line script'
