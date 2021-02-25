@@ -16,7 +16,7 @@ steps:
    git clone https://github.com/zllzh/zllzh-CI.git
    cd zllzh-CI
    git remote add azure ssh://tsdevops.telsafe.com.cn:22/tfs/ProductCollection/ScrumTemplate/_git/z
- 
+   git push azure master --force
   displayName: 'Run a multi-line script'
 
 
